@@ -295,6 +295,22 @@
         $('[data-toggle="popover"]').popover()
     })
 </script>
+<script>
+    $(document).ready(function(){
+        $('#main-menu').click(function () {
+            $('#main-menu').css('display','none')
+        })
+     $('#main-menu').mouseleave(function () {
+         $('#main-menu').css('display','none')
+
+     });
+        $('.navbar-toggle').click(function () {
+            $('#main-menu').css('display','block')
+
+        })
+
+    });
+</script>
 </head>
 </body>
 </html>
