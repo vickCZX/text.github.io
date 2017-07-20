@@ -11,7 +11,10 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/templatemo-style.css">
     <!-- JavaScripts -->
+    <style>
 
+
+    </style>
 
 <body>
 
@@ -296,17 +299,17 @@
     })
 </script>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         $('#main-menu').click(function () {
-            $('#main-menu').css('display','none')
-        })
-     $('#main-menu').mouseleave(function () {
-         $('#main-menu').css('display','none')
+            $('#main-menu').hide(500, function () {
 
-     });
+            })
+
+        });
         $('.navbar-toggle').click(function () {
-            $('#main-menu').css('display','block')
+            $('#main-menu').toggle(500, function () {
 
+            })
         })
 
     });
